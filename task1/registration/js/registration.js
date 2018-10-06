@@ -1,4 +1,4 @@
-function checkEmail(str){//qwe212@mmal.ew
+function checkEmail(str) {
   var result = str.match(/^[0-9-a-z-\.]+\@[0-9-a-z]{1,}\.[a-z]{2,}$/i);
   if (!result){
     alert('Введите валидный e-mail.');
@@ -39,6 +39,6 @@ function registration() {
   return false;
 }
 
-document.getElementsByClassName('registration')[0].onsubmit = function(){
+document.getElementsByClassName('registration')[0].onsubmit = function() {
   return registration();
 };
